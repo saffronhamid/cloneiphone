@@ -17,6 +17,17 @@ body {
   border-color: #3b3b3b;
   user-select: none;
 }
+/* Adjust body and html to allow scrolling */
+html, body {
+  overflow-x: hidden;  /* Prevent horizontal scrolling */
+  min-height: 100%;    /* Allow content to expand beyond viewport */
+}
+
+/* Optional: Set a global container to control scrolling */
+.container {
+  overflow-y: auto;  /* Enable vertical scrolling if content exceeds viewport */
+}
+
 
 canvas {
   touch-action: none;
